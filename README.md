@@ -4,11 +4,11 @@ A machine learning pipeline using a **K-Nearest Neighbors (KNN)** classifier to 
 
 Academic project — Faculty of Sciences and Technology, Tangier (Module: Artificial Intelligence, Major SSD, 2025/2026).
 
-## 📊 Overview
+## Overview
 
 Stock/crypto price prediction is a hard problem: absolute price is dominated by scale (Bitcoin went from ~$400 in 2014 to $90,000+), so raw prices are useless as KNN features. This project instead engineers a **"Market DNA"** — stationary, normalized indicators of momentum, volatility, and trend — and uses historical similarity (KNN) to classify the current market regime.
 
-## 🧠 Methodology
+## Methodology
 
 1. **Preprocessing** — clean raw CSV (comma-formatted thousands, whitespace in headers), parse dates, verify no missing values (Forward Fill as safety net).
 2. **Feature Engineering ("Market DNA")**:
@@ -24,7 +24,7 @@ Stock/crypto price prediction is a hard problem: absolute price is dominated by 
 6. **Evaluation** — precision / recall / F1-score per class (robust to class imbalance).
 7. **Visualization** — model predictions plotted directly on the Bitcoin price chart.
 
-## 📈 Results
+## Results
 
 | Regime | Precision | Recall | F1-score |
 |---|---|---|---|
@@ -63,7 +63,7 @@ bitcoin-regime-detection-knn/
     └── regime_predictions.png
 ```
 
-## 🚀 Usage
+## Usage
 
 ```bash
 git clone https://github.com/Salma-Rhomari/bitcoin-regime-detection-knn.git
@@ -74,18 +74,9 @@ python main.py
 
 This regenerates `data/bitcoin_clean.csv`, trains the KNN model, prints the classification report, and saves the prediction chart to `outputs/regime_predictions.png`.
 
-## 🛠️ Technologies
+## Technologies
 
 - Python
 - Pandas / pandas_ta (technical indicators)
 - Scikit-learn (KNN, StandardScaler, train_test_split, classification_report)
 - Matplotlib
-
-## 👥 Authors
-
-- Rhomari Salma
-- Erradi Youssef
-- Bouaksi Mohamed
-
-**Supervised by:** Pr. Sanae Khali Issa
-**Major:** SSD — Statistics and Data Science
